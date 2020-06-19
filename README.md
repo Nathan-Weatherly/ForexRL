@@ -21,16 +21,23 @@ Actions:
 Observations:
 
  - Past 4 trading weeks of minute data for ask and bid (O/H/L/C/V) 
- - O/H/L/C at 0.00001 or 1/100000 accuracy (0.1 pip)
- - V at 10000s
- - 3D array formatted as such:
+ - O/H/L/C at 0.00001 or 1/100,000 accuracy (0.1 pip)
+ - V at 10,000s
+ - 3D array of ask 2D array stacked on bid 2D array of this format:
 
-| Ask | 3d layer 0 |
-| Index | Open | High | Low | Close | Volume |
-| ------ | 0 | ------ | ------ | ------ | 4 |
-| 0 | ... | ... | ... | ... | ... |
-| ... | ... | ... | ... | ... | ... |
-| 7199 | ... | ... | ... | ... | ... |
+Index | Open | High | Low | Close | Volume 
+------ | ------ | ------ | ------ | ------ | ------ 
+0 | ... | ... | ... | ... | ... 
+... | ... | ... | ... | ... | ... 
+7199 | ... | ... | ... | ... | ... 
+
+ - 72,000 individual data points
+ 
+Rewards:
+
+ - Reward is the pip change in portfolio value from previous timestep
+ - Portfolio value is measured in dollars
+ - Formula: (current portfolio value)/(previous portfolio value) * 10,000
 
  
 
