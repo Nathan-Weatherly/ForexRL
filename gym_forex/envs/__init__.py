@@ -1,1 +1,1 @@
-from gym_forex.envs.forex_env import forexv0
+from gym_forex.envs.forexv0 import forexv0
