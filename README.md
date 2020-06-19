@@ -1,7 +1,7 @@
 # gym-forex
 Forex trading environment for OpenAI Gym.
 
-# forexv1
+# forex-v0
 Simple forex env for trading only USD/CHF.
 
 Episodes:
