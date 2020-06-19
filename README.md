@@ -7,8 +7,8 @@ Simple forex env for trading only USD/CHF.
 Episodes:
 
  - Each episode is one trading week or 5 days (12/24, 12/25, 1/01 weeks are holiday and therefore not considered)
- - Each minute is a one tick so their are 1440 * 5 = 7200 timesteps per episode
- - Weeks are chosen at random from a bank of data from Jan 1 2016 to Dec 31 2018
+ - Each timestep is one minute so there are 7200 timesteps per episode
+ - Weeks are chosen at random from a bank of data between Jan 1 2016 and Dec 31 2018 (Obtained from Dukascopy historical archives)
 
 Actions:
 
