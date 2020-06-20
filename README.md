@@ -6,8 +6,8 @@ Simple forex environment for trading only USD/CHF.
 
 Episodes:
 
- - Each episode is one trading week or 5 days (12/24, 12/25, 1/01 weeks are holiday and therefore not considered)
- - Each timestep is one minute so there are 7200 timesteps per episode
+ - Each episode is one trading day (12/25 and 1/01 are not considered due to their holiday nature)
+ - Each timestep is one minute so there are 1440 timesteps per episode
  - Weeks are chosen at random from a bank of data between Jan 1 2016 and Dec 31 2018 (Obtained from Dukascopy historical archives)
 
 Actions:
@@ -20,7 +20,7 @@ Actions:
  
 Observations:
 
- - Past 4 trading weeks of minute data for ask and bid (O/H/L/C/V) 
+ - Past trading week of minute data for ask and bid (O/H/L/C/V) 
  - O/H/L/C at 0.00001 or 1/100,000 accuracy (0.1 pip)
  - V at 10,000s
  - 3D array of ask 2D array stacked on bid 2D array of this format:
