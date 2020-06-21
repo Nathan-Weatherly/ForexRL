@@ -13,9 +13,10 @@ Episodes:
 Actions:
 
  - Continuous between -1 and 1.
- - 1 is 100% USD with long position
- - -1 is 100% CHF with short position
- - 0 is 50% USD, 50% CHF so it is essentially the same as zero position
+ - 1 is 100% of portfolio with a longposition
+ - -1 is 100% of portfolio with a short position
+ - 0 no position
+ - 0.5 is 50% of portfolio with a long position and 50% no position
  - etc.
  
 Observations:
