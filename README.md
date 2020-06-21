@@ -23,7 +23,7 @@ Observations:
  - Past trading week of minute data for ask and bid (O/H/L/C/V) 
  - O/H/L/C at 0.00001 or 1/100,000 accuracy (0.1 pip)
  - V at 10,000s
- - 3D array of ask 2D array stacked on bid 2D array of this format:
+ - 3D array of bid 2D array stacked on ask 2D array of this format:
 
 Index | Open | High | Low | Close | Volume 
 ------ | ------ | ------ | ------ | ------ | ------ 
@@ -35,7 +35,7 @@ Index | Open | High | Low | Close | Volume
  
 Rewards:
 
- - Reward is the pip change in portfolio value from previous timestep
+ - Reward is the pip change in portfolio value (avg of bid/ask) from previous timestep
  - Portfolio value is measured in USD 
  - Initial portfolio value for each episode is 100,000 USD or 1 Lot of USD/CHF
  - Formula: (current portfolio value)/(previous portfolio value) * 10,000
