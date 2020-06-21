@@ -35,7 +35,7 @@ Index | Open | High | Low | Close | Volume
  
 Rewards:
 
- - Reward is the pip change in portfolio value (avg of bid/ask) from previous timestep
+ - Reward is the pip change in portfolio value (avg of bid/ask close prices) from previous timestep
  - Portfolio value is measured in USD 
  - Initial portfolio value for each episode is 100,000 USD or 1 Lot of USD/CHF
  - Formula: (current portfolio value)/(previous portfolio value) * 10,000
