@@ -12,12 +12,9 @@ Episodes:
 
 Actions:
 
- - Continuous between -1 and 1.
+ - Discrete of -1 and 1.
  - 1 is 100% of portfolio with a longposition
  - -1 is 100% of portfolio with a short position
- - 0 no position
- - 0.5 is 50% of portfolio with a long position and 50% no position
- - etc.
  
 Observations:
 
