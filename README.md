@@ -12,9 +12,9 @@ Episodes:
 
 Actions:
 
- - Discrete of -1 and 1.
- - 1 is 100% of portfolio with a longposition
- - -1 is 100% of portfolio with a short position
+ - Discrete of 0 and 1.
+ - 1 is 100% of portfolio with a long position
+ - 0 is 100% of portfolio with a short position
  
 Observations:
 
